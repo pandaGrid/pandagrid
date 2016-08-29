@@ -1,0 +1,84 @@
+/*
+*	author:iekthh@outlook.com
+*	time:2016/08/26
+*/ 
+
+
+
+//所有DOM节点全部
+.panda{
+    padding: {
+    	right: 15px;
+    	left: 15px;
+    }
+}
+
+//所有网格.col-s-*,.col-m-*,.col-l-*,col-xl-*
+.panda-grid > [class^="col"]{
+
+	float: left;
+
+	padding: {
+    	right: 15px;
+    	left: 15px;
+    }
+
+    margin: {
+    	bottom: 5px;
+    }
+}
+
+//所有网格必须包含在.panda-grid内，不和.panda分离使用，必须包含在.panda内
+.panda-grid{
+	margin: {
+		left: -15px;
+		right: -15px;
+	}
+}
+
+
+//手机
+@media only screen and (max-width: 799px){
+
+	@for $i from 1 through 12 {
+
+	    .col-s-#{$i} { width: 8.333333% * $i; }
+
+	}
+	
+}
+
+//pad
+@media only screen and (min-width: 800px) and (max-width: 999px){
+
+	@for $i from 1 through 12 {
+
+	    .col-m-#{$i} { width: 8.333333% * $i; }
+
+	}
+	
+}
+
+//PC普屏
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+
+	@for $i from 1 through 12 {
+
+	    .col-l-#{$i} { width: 8.333333% * $i; }
+
+	}
+
+}
+
+//PC大屏
+@media only screen and (min-width: 1200px) {
+
+	@for $i from 1 through 12 {
+
+	    .col-xl-#{$i} { width: 8.333333% * $i; }
+
+	}
+
+}
+
+//4k高清屏,后续添加
