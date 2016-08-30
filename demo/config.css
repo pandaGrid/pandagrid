@@ -1,0 +1,79 @@
+/**
+*
+*以下是必须的配置参数
+*
+**/
+
+/*配置图片对题方式*/
+img{
+	vertical-align: middle;
+}
+
+/*配置连接颜色*/
+a:link{
+	color: #4882ed;
+}
+
+/*配置清除浮动*/
+.clearfix:before,
+.clearfix:after{
+    display: table;
+    content: ' ';
+}
+.clearfix:after{
+    clear: both;
+}
+
+
+/*配置时候忽略内外边距*/
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*配置背景颜色*/
+body{
+	font-size: 13px;
+	color: #333;
+	background-color: #fff;
+}
+
+/*配置分别在该情况下的系列参数*/
+@media only screen and (max-width: 799px){
+	.panda {
+		max-width:600px;
+		margin: 0 auto;
+		background-color: red;
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px){
+	.panda {
+		max-width:900px;
+		margin: 0 auto;
+		background-color: blue;
+	}
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+	.panda {
+		max-width:1100px;
+		margin: 0 auto;
+		background-color: #336699;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.panda {
+		max-width:1400px;
+		margin: 0 auto;
+		background-color: #f30;
+	}
+}
+
