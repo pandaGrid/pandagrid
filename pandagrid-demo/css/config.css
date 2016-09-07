@@ -1,0 +1,134 @@
+/**
+*
+*以下是必须的配置参数
+*
+**/
+html{
+	font-size: 62.5%;
+}
+
+
+body{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	font-family:'Hiragino Sans GB',"Microsoft YaHei",Tahoma,Arial,Helvetica,STHeiti,SimSun;
+	color: #201b18;
+	min-height: 100vh;
+}
+
+/*配置图片对题方式*/
+img{
+	vertical-align: middle;
+}
+
+
+select,input{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+select:focus{
+	outline: none;
+}
+/*配置连接颜色*/
+a{
+	text-decoration: none;
+}
+
+/*配置清除浮动*/
+.clearfix:before,
+.clearfix:after{
+    display: table;
+    content: ' ';
+}
+.clearfix:after{
+    clear: both;
+}
+/*配置表单元素*/
+input:focus,button{
+	outline: none;
+}
+
+
+/*配置时候忽略内外边距*/
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*配置左右 浮动*/
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+
+
+
+/*配置分别在该情况下的系列参数*/
+@media only screen and (max-width: 799px){
+	.panda {
+		max-width:700px;
+		margin: 0 auto;
+	}
+	[class^="tip"]{
+		color: #4285f4 !important;
+	}
+
+	[class^="tip"] li:nth-child(1) {
+     	border-left: 2px solid #4285f4 !important; 
+	}
+	[class^="tip"] li:hover {
+	    background-color: #3b78e7;
+	    cursor: pointer;
+	    color: #fff;
+	}
+	.banner{
+    	height: 200px !important;
+    	background: url(../image/banner.jpg) no-repeat center center !important;
+	}
+
+	body{
+		background: -moz-linear-gradient(top,  #4285f4 10%, #ffffff  10%) !important; /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #4285f4 10%,#ffffff   10%) !important; /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #4285f4 10%,#ffffff   10%) !important; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4285f4', endColorstr='#ffffff',GradientType=0 ) !important; /* IE6-9 */
+	}
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px){
+	.panda {
+		max-width:900px;
+		margin: 0 auto;
+	}
+	
+	.banner{
+    	height: 150px !important;
+    	background: url(../image/banner.jpg) no-repeat center center !important;
+	}	
+	
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1199px){
+	.panda {
+		max-width:1000px;
+		margin: 0 0 0 50px
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.panda {
+		max-width:1200px;
+		margin: 0 0 0 50px
+	}
+}
+
