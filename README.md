@@ -3,3 +3,7 @@
 
 ## DEMO
 使用熊猫网格搭的的一个[DEMO](http://chinaun.me/pandagrid-demo) 
+
+
+##Copyright
+Copyright (c) 2016 padagrid.
